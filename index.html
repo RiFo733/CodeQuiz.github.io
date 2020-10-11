@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="-ie-edge" />
+    <title>Javascript Quiz</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="./Assets/styles.css" />
+
+
+
+</head>
+
+<body>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    
+
+
+    <div class="leftcorner">
+        <a href="score.html">View Highscores</a></div>
+
+
+    <div class="time"></div>
+
+    <div class="container text-center" id="main">
+        <div class="row" id="intro">
+            <div class="col-md-6 col-md-4">
+                <h1>Coding quiz challenge!</h1>
+                <p>Quiz will be related to javascript topics. You will be alloted 75 seconds at the start of the quiz.
+                    If you
+                    get a question incorrect 15 seconds will be deducted from the timer. Once completed, please put your
+                    initials for the scoreboard.</p>
+
+                <p>Good luck!</p>
+                <button type="button" class="btn btn-secondary" id="startButton">Start Quiz</button>
+            </div>
+        </div>
+
+        <div class="row" id="quiz" style="display: none">
+            <div class="col-md-6 col-md-4">
+
+                <div class="question"></div>
+                <div class="options">
+                    <div class="option" id="1" onclick="checkanswer ('1')"></div>
+                    <div class="option" id="2" onclick="checkanswer ('2')"></div>
+                    <div class="option" id="3" onclick="checkanswer ('3')"></div>
+                    <div class="option" id="4" onclick="checkanswer ('4')"></div>
+                </div>
+                <p class="results" style="display: none;"></p>
+
+
+
+
+            </div>
+
+
+
+
+        </div>
+
+
+
+
+    </div>
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+        integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+        integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+        crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+        integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+        crossorigin="anonymous"></script>
+    <script src="./Assets/javascript.js"></script>
+</body>
+
+</html>
